@@ -9,6 +9,24 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
+<body>
+    <div class="grid-container">
+        <div class="item1"></div>
+        <div class="item2"></div>
+        <div class="item3">
+            <div class="grid-item"><a href="grid2.html">Grid2</a></div>
+            <div class="grid-item"><a href="grid3.html">Grid3</a></div>
+            <div class="grid-item"><a href="grid4.html">Grid4</a></div>
+            <div class="grid-item"><a href="grid5.html">Grid5</a></div>
+            <div class="grid-item"><a href="grid6.html">Grid6</a></div>
+            <div class="grid-item"><a href="index.html">Flex</a></div>
+        </div>
+        <div class="item4"></div>
+        <div class="item5"></div>
+    </div>
+</body>
+
+
 <style>
     .item1 {
         grid-area: header;
@@ -48,11 +66,10 @@
     .grid-container {
         display: grid;
         height: 800px;
-        grid-template-columns: 1fr 2fr; 
-        grid-template-rows: 1fr 2fr;
+        grid-template-columns: 2fr 2fr; 
+        grid-template-rows: 2fr 2fr;
         grid-template-areas:
-            'header header'
-            'nav nav'
+            'header nav'
             'main right'
             'footer footer';
     }
@@ -66,24 +83,4 @@
         margin: 20px;
     }
 </style>
-
-<body>
-    <div class="grid-container">
-        <div class="item1"></div>
-        <div class="item2"></div>
-        <div class="item3">
-            <div class="grid-item"><a href="grid2.html">Grid2</a></div>
-            <div class="grid-item"><a href="grid3.html">Grid3</a></div>
-            <div class="grid-item"><a href="grid4.html">Grid4</a></div>
-            <div class="grid-item"><a href="grid5.html">Grid5</a></div>
-            <div class="grid-item"><a href="grid6.html">Grid6</a></div>
-            <div class="grid-item"><a href="index.html">Flex</a></div>
-        </div>
-        <div class="item4"></div>
-        <div class="item5"> footer 
-        </div>
-    </div>
-
-</body>
-
 </html>
